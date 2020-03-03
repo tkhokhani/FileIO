@@ -6,9 +6,13 @@ public class FileWriteDemo {
     public static void main(String[] args) throws IOException {
       Scanner input= new Scanner(System.in);
         PrintWriter outfile= new PrintWriter("names.txt");
-        System.out.println("Enter a name: ");
-        String name=input.next();
-        outfile.println(name);
+        int i=0;
+        while(i<5) {
+            System.out.println("Enter a name: ");
+            String name = input.next();
+            outfile.println(name);
+            i++;
+        }
         outfile.close();
 
     }
