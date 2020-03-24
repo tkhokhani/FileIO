@@ -1,1 +1,13 @@
-t
+ public static void main(String[] args) throws IOException{
+        int i, student_amt, amt=3, per_class=3; //given in instruction
+        float  percentage_1, percentage_2, percentage_3;
+        float final_gpa;
+        boolean PSID_1,lName_1, fName_1;
+        String  A, B, C;
+        //
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter the file Name");
+            String f=input.next();
+            FileWriter fout= new FileWriter(f,true);
+            PrintWriter outfile=new PrintWriter(fout);
+
